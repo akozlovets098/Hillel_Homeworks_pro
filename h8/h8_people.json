@@ -1,0 +1,30 @@
+[
+  {
+  "first_name": "Anna",
+  "last_name": "Smith",
+  "dob": "1990.07.13",
+  "profession": "designer",
+  "fav_color": "green"
+  },
+  {
+  "first_name": "Bob",
+  "last_name": "Robinson",
+  "dob": "1997.06.15",
+  "profession": "test engineer",
+  "fav_color": "blue"
+  },
+  {
+  "first_name": "Megan",
+  "last_name": "Black",
+  "dob": "1987.07.23",
+  "profession": "teacher",
+  "fav_color": "yellow"
+  },
+  {
+  "first_name": "Anna",
+  "last_name": "Tyler",
+  "dob": "1993.12.30",
+  "profession": "doctor",
+  "fav_color": "violet"
+  }
+]
