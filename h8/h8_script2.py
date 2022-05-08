@@ -8,7 +8,7 @@ def create_persons_from_dict(ldict: List[Dict]) -> List[Person]:
     return [Person(**item) for item in ldict]
 
 
-def read_file(file_name):
+def read_file(file_name) -> List[Dict]:
     with open(file_name) as f:
         people = json.load(f)
     return people
