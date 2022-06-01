@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'header.html' %}
+<body>
+Purchases by {{category}}:
+{% for purchase in purchases %}
+<ul>
+<li>Name: {{purchase['name']}}, category: {{purchase['category']}}, quantity: {{purchase['quantity']}},
+    price: {{purchase['price']}} UAH, purchased by user {{purchase['user']}}</li>
+</ul>
+{% endfor %}
+</body>
+</html>
