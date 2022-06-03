@@ -130,4 +130,7 @@ with sqlite3.connect('people.sqlite') as db_connection:
         WHERE email IS NULL 
     ''')
 
+    cursor.close()
+    db_connection.commit()
+
 
