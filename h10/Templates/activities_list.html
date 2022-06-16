@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'header.html' %}
+<body>
+Activities by {{category}}:
+{% for activity in activities %}
+<ul>
+
+    <li>Activity: {{activity['name']}},</li>
+    <li>Details: {{activity['details']}},</li>
+    <li>Category: {{activity['category']}},</li>
+    <li>Date: {{activity['date']}}</li>
+</ul>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>New activity</title>
+</head>
+<body>
+<h3>
+    To add new activity, please fill in the fields below
+    (please note that Name and Category are required for the activity to be successfully added)
+</h3>
+<form activity="" method="post" novalidate>
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.name.label }}<br>
+        {{ form.name(size=50) }}
+    </p>
+    <p>
+        {{ form.details.label }}<br>
+        {{ form.details(size=50) }}
+    </p>
+    <p>
+        {{ form.category.label }}<br>
+        {{ form.category(size=20) }}
+    </p>
+    <p>
+        {{ form.date.label }}<br>
+        {{ form.date(size=50) }}
+    </p>
+    <p>{{ form.add() }} {{ form.add.label }}</p>
+</form>
+
+Example of an activity:
+<ul>
+
+    <li>Activity: {{activity['name']}},</li>
+    <li>Details: {{activity['details']}},</li>
+    <li>Category: {{activity['category']}},</li>
+    <li>Date: {{activity['date']}}</li>
+</ul>
+</body>
+</html>
